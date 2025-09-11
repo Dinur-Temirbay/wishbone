@@ -1,0 +1,55 @@
+@use '../base/variables.scss';
+
+.process {
+	background-color: variables.$primary-bg-color;
+
+	&__inner {
+		padding: 6.2rem 7.5rem;
+		text-align: center;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: variables.$secondary-text-color;
+	}
+
+	&__title {
+		font-size: 36px;
+		font-weight: 400;
+		color: variables.$primary-text-color;
+	}
+
+	&__items {
+		margin-top: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 6rem;
+	}
+
+	&__item {
+		max-width: 270px;
+		text-align: center;
+	}
+
+	&__item-img {
+		width: 100px;
+		max-width: 100%;
+	}
+
+	&__item-title {
+		margin: 15px 0 10px 0;
+		font-size: 18px;
+		font-weight: 400;
+		color: variables.$third-text-color;
+	}
+
+	&__item-descr {
+		font-size: 15px;
+		font-weight: 400;
+		color: variables.$secondary-text-color;
+		line-height: 1.6;
+	}
+}

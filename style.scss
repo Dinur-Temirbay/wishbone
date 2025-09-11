@@ -1,0 +1,24 @@
+@use 'base/variables.scss';
+@use 'blocks/_header.scss';
+@use 'blocks/_promo.scss';
+@use 'blocks/_about.scss';
+@use 'blocks/_showcase.scss';
+@use 'blocks/_process.scss';
+@use 'blocks/_marble.scss';
+@use 'blocks/customers.scss';
+@use 'blocks/_swirling.scss';
+@use 'blocks/_featured.scss';
+@use 'blocks/_team.scss';
+@use 'blocks/_getInTouch.scss';
+@use 'blocks/footer.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}

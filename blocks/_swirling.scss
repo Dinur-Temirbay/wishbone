@@ -1,0 +1,35 @@
+@use '../base/variables.scss';
+
+.swirling {
+	background: url('../img/swirling/swirling.jpg') no-repeat center / cover;
+	min-height: 600px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.1);
+	}
+
+	&__info {
+		position: absolute;
+		left: 60px;
+		bottom: 40%;
+		max-width: 280px;
+		z-index: 1;
+	}
+
+	&__title {
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: variables.$third-text-color;
+	}
+	&__subtitle {
+		font-size: 16px;
+		font-weight: 400;
+		color: variables.$secondary-text-color;
+	}
+}
