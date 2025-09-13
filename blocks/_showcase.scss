@@ -33,3 +33,28 @@
 		color: variables.$secondary-text-color;
 	}
 }
+
+// ! Tablet
+@media (max-width: 768px) {
+	.showcase {
+		&__info {
+			right: 30px;
+		}
+		&__title {
+			font-size: 12px;
+		}
+		&__subtitle {
+			font-size: 14px;
+		}
+	}
+}
+// ! Phone
+@media (max-width: 360px) {
+	.showcase {
+		&__info {
+			right: 0px;
+			margin: 30px;
+			text-align: center;
+		}
+	}
+}

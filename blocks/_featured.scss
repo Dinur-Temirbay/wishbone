@@ -65,7 +65,9 @@
 			border: none;
 			border-radius: 15px;
 			background-color: variables.$button-color;
+			transition: 0.5s ease-in-out;
 			cursor: pointer;
+
 			&:hover {
 				scale: 1.05;
 			}

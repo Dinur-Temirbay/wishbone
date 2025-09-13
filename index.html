@@ -10,6 +10,10 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			rel="stylesheet"
+		/>
 		<title>Wishbone</title>
 	</head>
 	<body>
@@ -22,6 +26,13 @@
 						class="header__logo-img"
 					/>
 				</div>
+
+				<div class="header__burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
 				<div class="header__menu">
 					<nav class="header__nav">
 						<ul class="header__list">
@@ -358,6 +369,22 @@
 			</div>
 		</section>
 
-		<footer class="footer" id="footer"></footer>
+		<footer class="footer" id="footer">
+			<div class="footer__inner">
+				<div class="footer__info">
+					<img src="./img/footer/logo.svg" alt="footer__info-logo" />
+					<p class="footer__info-descr">
+						Powered by Webflow.
+						<br />
+						All rights reserved Wishbone+Partners, Inc. Licensing.
+					</p>
+				</div>
+				<div class="footer__links">
+					<i class="fa-brands fa-twitter"></i>
+					<i class="fa-brands fa-instagram"></i>
+					<i class="fa-brands fa-facebook-f"></i>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
