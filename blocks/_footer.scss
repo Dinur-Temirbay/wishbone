@@ -1,1 +1,39 @@
 @use '../base/variables.scss';
+
+.footer {
+	background-color: variables.$primary-bg-color;
+	padding: 3.7rem 8.5rem;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: end;
+	}
+	&__info {
+		flex: 0 1 500px;
+
+		&-descr {
+			margin-top: 20px;
+			font-size: 14px;
+			font-weight: 400;
+			color: variables.$secondary-text-color;
+		}
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+
+		i {
+			font-size: 24px;
+			color: variables.$primary-text-color;
+			transition: 0.5s ease-in-out;
+			cursor: pointer;
+
+			&:hover {
+				scale: 1.05;
+			}
+		}
+	}
+}
