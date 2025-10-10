@@ -33,3 +33,14 @@
 		color: variables.$secondary-text-color;
 	}
 }
+
+// ! Phone
+@media (max-width: 360px) {
+	.marble {
+		&__info {
+			right: 0px;
+			margin: 30px;
+			text-align: center;
+		}
+	}
+}

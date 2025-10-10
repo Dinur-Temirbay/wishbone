@@ -2,12 +2,12 @@
 
 .customers {
 	background-color: variables.$third-bg-color;
-	padding: 8rem;
 
 	&__inner {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		padding: 8rem;
 	}
 
 	&__subtitle {
@@ -45,5 +45,58 @@
 	&__right-img {
 		width: 140px;
 		height: auto;
+	}
+}
+
+// ! Laptop
+@media (max-width: 1024px) {
+	.customers {
+		&__inner {
+			padding: 4rem;
+		}
+	}
+}
+
+// ! Tablet
+@media (max-width: 768px) {
+	.customers {
+		&__inner {
+			padding: 4rem;
+		}
+		&__subtitle {
+			font-size: 12px;
+		}
+		&__title {
+			font-size: 28px;
+		}
+		&__descr {
+			font-size: 13px;
+			max-width: 250px;
+		}
+		&__right {
+			grid-gap: 2rem;
+			&-img {
+				width: 100px;
+			}
+		}
+	}
+}
+
+// ! Phone
+@media (max-width: 360px) {
+	.customers {
+		&__inner {
+			flex-direction: column;
+			padding: 3rem 2rem;
+			text-align: center;
+		}
+		&__right {
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 2rem;
+			margin-top: 2rem;
+			&-img {
+				width: 80px;
+			}
+		}
 	}
 }
