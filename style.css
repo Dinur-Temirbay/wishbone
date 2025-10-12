@@ -686,6 +686,45 @@
   color: #1b1a1a;
 }
 
+@media (max-width: 1024px) {
+  .featured__item-subtitle {
+    font-size: 12px;
+  }
+  .featured__item-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .featured__inner {
+    padding: 30px;
+  }
+  .featured__title {
+    font-size: 28px;
+  }
+  .featured__subtitle {
+    font-size: 18px;
+  }
+  .featured__footer {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .featured__title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .featured__subtitle {
+    text-align: center;
+    font-size: 16px;
+  }
+  .featured__items {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .featured__item-btn {
+    left: 30%;
+  }
+}
 .team {
   background-color: #fff;
 }
@@ -753,6 +792,85 @@
      object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .team__inner {
+    padding: 50px;
+  }
+  .team__items {
+    gap: 40px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .team__inner {
+    padding: 30px;
+  }
+  .team__info {
+    flex: 0 1 250px;
+  }
+  .team__info-title {
+    font-size: 28px;
+  }
+  .team__info-subtitle {
+    font-size: 14px;
+  }
+  .team__info-btn {
+    font-size: 14px;
+  }
+  .team__items {
+    gap: 20px;
+  }
+  .team__item-title {
+    font-size: 16px;
+  }
+  .team__item-subtitle {
+    font-size: 12px;
+  }
+  .team__img-wrapper {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (max-width: 360px) {
+  .team__inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .team__info {
+    flex: 0 1 auto;
+    text-align: center;
+  }
+  .team__info-title {
+    font-size: 24px;
+  }
+  .team__info-subtitle {
+    font-size: 13px;
+  }
+  .team__info-btn {
+    font-size: 13px;
+    margin-left: 0;
+  }
+  .team__items {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .team__item {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+  }
+  .team__item-title {
+    font-size: 14px;
+  }
+  .team__item-subtitle {
+    font-size: 11px;
+  }
+  .team__img-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+}
 .getInTouch {
   background-color: #cec4bc;
 }
