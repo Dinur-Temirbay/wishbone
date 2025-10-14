@@ -802,7 +802,7 @@
 }
 @media (max-width: 768px) {
   .team__inner {
-    padding: 30px;
+    padding: 2rem 3rem;
   }
   .team__info {
     flex: 0 1 250px;
@@ -902,11 +902,32 @@
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .getInTouch__inner {
+    padding: 4rem 3rem;
+  }
+  .getInTouch__info {
+    flex: 0 1 400px;
+  }
+  .getInTouch__info-title {
+    font-size: 24px;
+  }
+  .getInTouch__info-subtitle {
+    font-size: 12px;
+  }
+}
+@media (max-width: 360px) {
+  .getInTouch__inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+}
 .footer {
   background-color: #fff;
-  padding: 3.7rem 8.5rem;
 }
 .footer__inner {
+  padding: 3.7rem 8.5rem;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -935,6 +956,19 @@
   scale: 1.05;
 }
 
+@media (max-width: 768px) {
+  .footer__inner {
+    padding: 4rem 3rem;
+  }
+}
+@media (max-width: 360px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
